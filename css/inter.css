@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f3f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.left-panel {
+    flex: 1;
+    background:   #1C7DFF;
+    color: white;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.left-panel h1 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.left-panel h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: white;
+    margin-top: 10px;
+}
+
+.left-panel p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.know-more-btn {
+    display: inline-block;
+    width: 130px;              
+    text-align: center;         
+    padding: 8px 0;             
+    border: 1.5px solid white;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 10px;          
+}
+
+.know-more-btn:hover {
+    background: white;
+    color: #1C7DFF;
+}
+
+
+.right-panel {
+    flex: 1;
+    background: white;
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signin-title {
+    color: #555;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+      text-align: center;
+}
+
+.signin-title::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 3px;
+    background:#1C7DFF;
+        margin: 8px auto 0; 
+}
+
+.input-group {
+    margin-top: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    background: transparent;
+    font-size: 15px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: #aaa;
+}
+
+.input-field:focus {
+    outline: none;
+    border-bottom-color: #1C7DFF;
+}
+
+.login-btn {
+    width: 140px;                  
+    padding: 10px 0;               
+    background: #1C7DFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(30, 136, 229, 0.3);
+    transition: all 0.3s ease;
+    display: block;
+    margin: 25px auto 0;           
+}
+
+
+.login-btn:hover {
+    background:  #1C7DFF;
+    transform: translateY(-2px);
+     
+}
+
+
+
+
+
+.half-circle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 28px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    clip-path: inset(0 35% 0 0);   
+    left: calc(50% - 18px);        
+    top: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel {
+    position: relative;   
+    overflow: hidden;     
+}
+.diamond-decoration {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 22px solid #eef1f5;   
+    border-radius: 45px;         
+    background: transparent;
+    transform: rotate(45deg);
+    top: 22%;
+    right: -60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
